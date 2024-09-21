@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Objetos-->
+    <dimen name="default_size_logo_width">200dp</dimen>
+    <dimen name="default_size_centering_images">100dp</dimen>
+    <dimen name="default_size_button_height">48dp</dimen>
+    <dimen name="default_size_edittext_height">60dp</dimen>
+    <dimen name="default_size_fullarea_edittext_height">76dp</dimen>
+    <dimen name="default_size_bottom_navigation_height">96dp</dimen>
+
+    <!--Icons-->
+    <dimen name="icon_minimal">6dp</dimen>
+    <dimen name="icon_tiny">12dp</dimen>
+    <dimen name="icon_small">24dp</dimen>
+    <dimen name="icon_medium">40dp</dimen>
+    <dimen name="icon_big">66dp</dimen>
+    <dimen name="icon_huge">84dp</dimen>
+    <dimen name="icon_maximum">102dp</dimen>
+
+    <!--Creation icon drawable padding-->
+    <dimen name="ic_pd_minimal">1dp</dimen>
+    <dimen name="ic_pd_tiny">2dp</dimen>
+    <dimen name="ic_pd_small">4dp</dimen>
+    <dimen name="ic_pd_medium">8dp</dimen>
+    <dimen name="ic_pd_big">16dp</dimen>
+    <dimen name="ic_pd_huge">24dp</dimen>
+    <dimen name="ic_pd_maximum">32dp</dimen>
+
+    <!--Margens-->
+    <dimen name="marginMinimal">2dp</dimen>
+    <dimen name="marginTiny">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginMedium">16dp</dimen>
+    <dimen name="marginBig">24dp</dimen>
+    <dimen name="marginHuge">32dp</dimen>
+    <dimen name="marginMaximum">64dp</dimen>
+
+    <!--Textos-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_big">16sp</dimen>
+
+    <dimen name="text_subtitle_small">16sp</dimen>
+    <dimen name="text_subtitle_medium">18sp</dimen>
+    <dimen name="text_subtitle_big">20sp</dimen>
+
+    <dimen name="text_title_small">18sp</dimen>
+    <dimen name="text_title_medium">22sp</dimen>
+    <dimen name="text_title_big">26sp</dimen>
+
+    <!--Corner radius-->
+    <dimen name="cornerRadiusSquare">4dp</dimen>
+    <dimen name="cornerRadiusSmooth">8dp</dimen>
+
+
+
+</resources>

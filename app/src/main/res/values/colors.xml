@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#EC3A3A</color>
+    <color name="colorPrimaryVariant">#BE1B21</color>
+    <color name="colorSecondary">#3A7AEC</color>
+    <color name="colorSecondaryVariant">#3647b9</color>
+    <color name="colorTertiary">#54a347</color>
+    <color name="colorTertiaryVariant">#2a6021</color>
+
+    <color name="bg_default_app">#E1E1E1</color>
+    <color name="bg_horizontal_app">#FFE1E1</color>
+    <color name="bg_vertical_app">#E1E1FF</color>
+    <color name="bg_cross_app">#E1FFE1</color>
+
+    <color name="text_color_default">#5C5353</color>
+    <color name="text_color_default_dk">#3A3636</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF888888</color>
+    <color name="translucid">#00000000</color>
+    <color name="translucid25">#30000000</color>
+    <color name="translucid50">#70000000</color>
+    <color name="translucid75">#B0000000</color>
+    <color name="opaque25">#B0FFFFFF</color>
+    <color name="opaque50">#70FFFFFF</color>
+    <color name="opaque75">#30FFFFFF</color>
+
+
+    <!-- cores de status das tarefas-->
+    <color name="unexecuted">#535B5C</color>
+    <color name="light_unexecuted">#757D7E</color>
+    <color name="running">#188DF4</color>
+    <color name="light_running">#3AAFF6</color>
+    <color name="executed">#2D9C32</color>
+    <color name="light_executed">#4FBE54</color>
+    <color name="offside">#F3B500</color>
+    <color name="light_offside">#FFD722</color>
+    <color name="suspended">#B00020</color>
+    <color name="light_suspended">#ed323b</color>
+
+    <color name="main_horizontal_data_color">#F32630</color>
+    <color name="main_vertical_data_color">#2B46DD</color>
+    <color name="main_cross_data_color">#4CAF50</color>
+
+
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSmall"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/cornerRadiusSmooth"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardMaxElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/v_gl_item_main_card_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/v_gl_item_main_card_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
+
+            <FrameLayout
+                android:id="@+id/fl_btn_item_remove"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/marginSmall"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/v_gl_item_main_card_begin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/fl_item_remove_activated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bg_gradient_delete" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:minWidth="@dimen/icon_medium"
+                        android:minHeight="@dimen/icon_medium"
+                        android:src="@drawable/ic_delete" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_item_main_card"
+                style="@style/Text_Body_Large"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/default_size_edittext_height"
+                android:layout_margin="@dimen/marginSmall"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/v_gl_item_main_card_end"
+                app:layout_constraintStart_toStartOf="@+id/v_gl_item_main_card_begin"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:hint="coluna 1"
+                tools:textColor="@color/colorPrimary" />
+
+            <FrameLayout
+                android:id="@+id/fl_btn_change_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginSmall"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/v_gl_item_main_card_begin"
+                app:layout_constraintTop_toBottomOf="@+id/ed_item_main_card">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_btn_change_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/icon_medium"
+                    android:minHeight="@dimen/icon_medium"
+                    android:src="@drawable/baseline_text_format_24"
+                    tools:tint="@color/colorPrimary" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_btn_change_item_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginSmall"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fl_btn_change_text_color"
+                app:layout_constraintTop_toBottomOf="@+id/ed_item_main_card">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_btn_change_item_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/icon_medium"
+                    android:minHeight="@dimen/icon_medium"
+                    android:src="@drawable/baseline_color_lens_24"
+                    tools:tint="@color/colorPrimary" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_btn_clear_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginSmall"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/v_gl_item_main_card_end"
+                app:layout_constraintTop_toBottomOf="@+id/ed_item_main_card">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_btn_clear_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/icon_medium"
+                    android:minHeight="@dimen/icon_medium"
+                    android:src="@drawable/baseline_close_24"
+                    tools:tint="@color/colorPrimary" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_btn_item_add"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/marginSmall"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/v_gl_item_main_card_end"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_gradient_confirm" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minWidth="@dimen/icon_medium"
+                    android:minHeight="@dimen/icon_medium"
+                    android:src="@drawable/ic_add" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_focus_edited"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginMinimal"
+            tools:src="@drawable/ic_outline_button_disable" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MagicTables" parent="Theme.Design.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.MagicTables" parent="Base.Theme.MagicTables" />
+    <style name="Text_Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_color_default_dk</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_title_big</item>
+    </style>
+    <style name="Text_SubTitle" parent="TextAppearance.Material3.TitleSmall" >
+        <item name="android:textColor">@color/text_color_default_dk</item>
+        <item name="android:textSize">@dimen/text_subtitle_big</item>
+    </style>
+    <style name="Text_Body" parent="TextAppearance.Material3.BodyMedium" >
+        <item name="android:textColor">@color/text_color_default</item>
+    </style>
+    <style name="Text_Body_Large" parent="TextAppearance.Material3.BodyLarge" >
+        <item name="android:textColor">@color/text_color_default</item>
+        <item name="android:textSize">@dimen/text_subtitle_medium</item>
+    </style>
+
+    <style name="Outline_H_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_h_outline_button</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+    <style name="H_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_button_h</item>
+        <item name="android:textColor">@color/bg_horizontal_app</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+    <style name="Outline_V_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_v_outline_button</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+    <style name="V_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_button_v</item>
+        <item name="android:textColor">@color/bg_vertical_app</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+    <style name="Outline_C_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_c_outline_button</item>
+        <item name="android:textColor">@color/colorTertiary</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+    <style name="C_Button" parent="Widget.AppCompat.Button.Borderless" >
+        <item name="android:background">@drawable/selector_button_c</item>
+        <item name="android:textColor">@color/bg_cross_app</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <item>
+        <shape
+            android:shape="oval">
+
+            <stroke
+                android:width="2dp"
+                android:color="@color/grey"/>
+
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_logout_grey"
+        android:end="@dimen/ic_pd_medium"
+        android:start="@dimen/ic_pd_medium"
+        android:top="@dimen/ic_pd_medium"
+        android:bottom="@dimen/ic_pd_medium">
+    </item>
+
+</layer-list>

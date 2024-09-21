@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default_app">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_close"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/h_gl_presentation_appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            android:tint="@color/suspended"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="@style/Text_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:gravity="center"
+        android:text="Magic Tables"
+        app:layout_constraintEnd_toStartOf="@+id/v_gl_presentation_end"
+        app:layout_constraintStart_toStartOf="@+id/v_gl_presentation_begin"
+        app:layout_constraintTop_toTopOf="@+id/h_gl_presentation_appbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Text_Body_Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:gravity="center"
+        android:text="Sua nova maneira de criar tabelas e cruzar valores determinando regras especificas para cada variavel gerando a melhor aleatoriedade de forma customizavel"
+        app:layout_constraintEnd_toStartOf="@+id/v_gl_presentation_end"
+        app:layout_constraintStart_toStartOf="@+id/v_gl_presentation_begin"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_gl_presentation_appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="?attr/actionBarSize" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_gl_presentation_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_gl_presentation_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        style="@style/Outline_H_Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/default_size_button_height"
+        android:text="Iniciar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toStartOf="@+id/v_gl_presentation_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/v_gl_presentation_begin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        style="@style/Outline_H_Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/default_size_button_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_gl_presentation_end"
+        app:layout_constraintStart_toStartOf="@+id/v_gl_presentation_begin"
+        android:text="Continuar"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

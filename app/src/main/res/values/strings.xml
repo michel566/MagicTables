@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MagicTables</string>
+    <string name="btn_select">Selecionar</string>
+    <string name="btn_cancel">Cancelar</string>
+</resources>

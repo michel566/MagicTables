@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/presentationFragment">
+
+    <fragment
+        android:id="@+id/presentationFragment"
+        android:name="com.michelbarbosa.magictables.ui.fragments.PresentationFragment"
+        tools:layout="@layout/fragment_presentation"
+        android:label="PresentationFragment" >
+        <action
+            android:id="@+id/action_presentationFragment_to_horizontalDataFragment"
+            app:destination="@id/horizontalDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/horizontalDataFragment"
+        android:name="com.michelbarbosa.magictables.ui.fragments.HorizontalDataFragment"
+        tools:layout="@layout/fragment_horizontal_data"
+        android:label="HorizontalDataFragment" />
+
+</navigation>
